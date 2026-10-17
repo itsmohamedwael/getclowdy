@@ -25,12 +25,19 @@
   </p>
 
   <p align="center">
+    <a href="https://app.lava.top/products/86bc031d-daf3-4abe-b82e-1d4e4f78007d/aea15568-4401-4703-9bd6-5ec233591abe?currency=USD&domainId=8c375986-88a5-4505-b605-00a922d60999&domainName=itsmohamedwael.info" target="_blank" rel="noopener noreferrer">
+      <img src="assets/tip-button.svg" alt="☕ Leave a Tip on Lava.top" height="46" style="margin-top: 6px;"/>
+    </a>
+  </p>
+
+  <p align="center">
     <a href="#-key-capabilities">Key Capabilities</a> •
     <a href="#-system-architecture">Architecture</a> •
     <a href="#-quick-start">Quick Start</a> •
     <a href="#-voice--personality-engine">Voice & Dialects</a> •
     <a href="#-windows-automation-arsenal">Automation Tools</a> •
     <a href="#-security--privacy">Security</a> •
+    <a href="#-support--tips">Support & Tips</a> •
     <a href="#-contributing">Contributing</a>
   </p>
 
@@ -267,6 +274,22 @@ We treat security and local privacy as core fundamentals:
 - 🛡️ **Zero Data Harvesting**: Clowdy runs locally on your PC. Conversations and screen frames are streamed strictly between your client and Google's official Gemini Live API endpoint.
 - 🔐 **Windows DPAPI Encryption**: Any stored tokens, credentials, or sensitive data are protected with hardware-bound Windows Data Protection API encryption (`win32crypt.CryptProtectData`).
 - 🚫 **No Leaked Keys**: Private credentials, license keys, and local environment variables are strictly ignored via `.gitignore`.
+
+---
+
+## 💖 Support & Tips
+
+Clowdy is an independent open-source project. If Clowdy helped you, boosted your productivity, or made you smile with its authentic Egyptian humor, you can support continuous development, server infrastructure, and new features by leaving a tip:
+
+<div align="center">
+  <br/>
+  <a href="https://app.lava.top/products/86bc031d-daf3-4abe-b82e-1d4e4f78007d/aea15568-4401-4703-9bd6-5ec233591abe?currency=USD&domainId=8c375986-88a5-4505-b605-00a922d60999&domainName=itsmohamedwael.info" target="_blank" rel="noopener noreferrer">
+    <img src="assets/tip-button.svg" alt="☕ Leave a Tip on Lava.top" height="52"/>
+  </a>
+  <br/><br/>
+  <sub>Clicking the button redirects to the secure <b>Lava.top</b> checkout page (USD / Card accepted). Every contribution is deeply appreciated! 🙏</sub>
+  <br/><br/>
+</div>
 
 ---
 
