@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040A12" />
+      <stop offset="50%" stop-color="#06101C" />
+      <stop offset="100%" stop-color="#02060B" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1826" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#050E17" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E283E" />
+      <stop offset="50%" stop-color="#091827" />
+      <stop offset="100%" stop-color="#030A12" />
+    </linearGradient>
+
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF88" />
+      <stop offset="50%" stop-color="#00D4FF" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <radialGradient id="coreAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#0077AA" stop-opacity="0.2" />
+      <stop offset="80%" stop-color="#A855F7" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#00D4FF" flood-opacity="0.18" />
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+
+      * {
+        font-family: 'Fira Code', Consolas, 'Courier New', monospace;
+      }
+
+      /* Animated Flow Cables */
+      .flow-cable {
+        stroke-dasharray: 8 16;
+        animation: flowStream 1.8s linear infinite;
+      }
+      .flow-rev {
+        stroke-dasharray: 8 16;
+        animation: flowStreamRev 1.8s linear infinite;
+      }
+
+      @keyframes flowStream {
+        0% { stroke-dashoffset: 48; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes flowStreamRev {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 48; }
+      }
+
+      /* Pulse Elements */
+      .pulse-beacon {
+        animation: beaconGlow 2s ease-in-out infinite alternate;
+      }
+      @keyframes beaconGlow {
+        0% { opacity: 0.4; transform: scale(0.96); }
+        100% { opacity: 1; transform: scale(1.04); }
+      }
+
+      /* Core Rotation */
+      .orbit-ring-1 {
+        transform-origin: 440px 170px;
+        animation: orbitCw 16s linear infinite;
+      }
+      .orbit-ring-2 {
+        transform-origin: 440px 170px;
+        animation: orbitCcw 22s linear infinite;
+      }
+      @keyframes orbitCw {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes orbitCcw {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      /* Audio Bars */
+      .wave-bar {
+        transform-origin: bottom;
+        animation: waveAnim 1s ease-in-out infinite alternate;
+      }
+      @keyframes waveAnim {
+        0% { transform: scaleY(0.2); }
+        100% { transform: scaleY(1.0); }
+      }
+      .wb-1 { animation-delay: 0.1s; }
+      .wb-2 { animation-delay: 0.4s; }
+      .wb-3 { animation-delay: 0.2s; }
+      .wb-4 { animation-delay: 0.6s; }
+      .wb-5 { animation-delay: 0.3s; }
+      .wb-6 { animation-delay: 0.7s; }
+
+      /* Scanning Radar in Vision */
+      .radar-sweep {
+        animation: radarMove 2.4s ease-in-out infinite alternate;
+      }
+      @keyframes radarMove {
+        0% { transform: translateY(0px); opacity: 0.3; }
+        50% { opacity: 0.9; }
+        100% { transform: translateY(32px); opacity: 0.3; }
+      }
+
+      /* Glowing Status Indicator */
+      .status-blink {
+        animation: blinkLed 1.2s infinite ease-in-out alternate;
+      }
+      @keyframes blinkLed {
+        0% { opacity: 0.3; }
+        100% { opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="876" height="336" rx="16" fill="url(#bgGrad)" stroke="#00D4FF" stroke-width="1.2" stroke-opacity="0.35" filter="url(#cardShadow)"/>
+
+  <!-- Subtle Cyber Grid -->
+  <g stroke="#00D4FF" stroke-width="0.5" stroke-opacity="0.07">
+    <line x1="2" y1="40" x2="878" y2="40" />
+    <line x1="2" y1="300" x2="878" y2="300" />
+    <line x1="260" y1="40" x2="260" y2="300" />
+    <line x1="620" y1="40" x2="620" y2="300" />
+  </g>
+
+  <!-- Top HUD Header Bar -->
+  <g transform="translate(24, 26)">
+    <circle class="status-blink" cx="6" cy="0" r="4.5" fill="#00FF88" filter="url(#neonGlow)" />
+    <text x="20" y="4" fill="#00FF88" font-size="11" font-weight="700" letter-spacing="1">
+      ● LIVE WEBSOCKET (wss://) • FULL-DUPLEX 24kHz PCM
+    </text>
+
+    <text x="416" y="4" text-anchor="middle" fill="#E0F7FA" font-size="12" font-weight="700" letter-spacing="1.5">
+      CLOWDY NEURAL PIPELINE ARCHITECTURE
+    </text>
+
+    <text x="832" y="4" text-anchor="end" fill="#00D4FF" font-size="11" font-weight="600">
+      RTT: &lt;180ms | LATENCY: ZERO
+    </text>
+  </g>
+
+  <!-- ==================== FLOW CABLES (Behind Cards) ==================== -->
+  <g filter="url(#neonGlow)">
+    <!-- Voice In -> Core (Top Left) -->
+    <path d="M 230 105 C 290 105, 300 145, 345 155" fill="none" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.25"/>
+    <path class="flow-cable" d="M 230 105 C 290 105, 300 145, 345 155" fill="none" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Vision In -> Core (Bottom Left) -->
+    <path d="M 230 235 C 290 235, 300 195, 345 185" fill="none" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.25"/>
+    <path class="flow-cable" d="M 230 235 C 290 235, 300 195, 345 185" fill="none" stroke="#00D4FF" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Core -> Voice Out (Top Right) -->
+    <path d="M 535 155 C 580 145, 590 105, 650 105" fill="none" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.25"/>
+    <path class="flow-cable" d="M 535 155 C 580 145, 590 105, 650 105" fill="none" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Core -> Automation Out (Bottom Right) -->
+    <path d="M 535 185 C 580 195, 590 235, 650 235" fill="none" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.25"/>
+    <path class="flow-cable" d="M 535 185 C 580 195, 590 235, 650 235" fill="none" stroke="#00FF88" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== STAGE 1: INPUTS (LEFT) ==================== -->
+  <!-- Card 1: Live Voice Input -->
+  <g transform="translate(30, 60)">
+    <rect width="200" height="90" rx="10" fill="url(#cardGrad)" stroke="#00FF88" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#00FF88" font-size="12" font-weight="700">🎙️ USER VOICE</text>
+    <text x="16" y="44" fill="#8FFCFF" font-size="10">24kHz PCM Full-Duplex</text>
+
+    <!-- Animated Audio Waveform -->
+    <g transform="translate(16, 54)">
+      <rect class="wave-bar wb-1" x="0" y="0" width="4" height="22" rx="2" fill="#00FF88" />
+      <rect class="wave-bar wb-2" x="8" y="0" width="4" height="22" rx="2" fill="#00FF88" />
+      <rect class="wave-bar wb-3" x="16" y="0" width="4" height="22" rx="2" fill="#00D4FF" />
+      <rect class="wave-bar wb-4" x="24" y="0" width="4" height="22" rx="2" fill="#00FF88" />
+      <rect class="wave-bar wb-5" x="32" y="0" width="4" height="22" rx="2" fill="#00D4FF" />
+      <rect class="wave-bar wb-6" x="40" y="0" width="4" height="22" rx="2" fill="#00FF88" />
+      <rect class="wave-bar wb-2" x="48" y="0" width="4" height="22" rx="2" fill="#00D4FF" />
+      <rect class="wave-bar wb-4" x="56" y="0" width="4" height="22" rx="2" fill="#00FF88" />
+    </g>
+
+    <text x="184" y="72" text-anchor="end" fill="#00FF88" font-size="9.5" font-weight="600">INPUT 🟢</text>
+  </g>
+
+  <!-- Card 2: Screen & Vision Input -->
+  <g transform="translate(30, 190)">
+    <rect width="200" height="90" rx="10" fill="url(#cardGrad)" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#00D4FF" font-size="12" font-weight="700">👁️ SCREEN VISION</text>
+    <text x="16" y="44" fill="#8FFCFF" font-size="10">Real-Time Desktop Diff</text>
+
+    <!-- Mini Monitor with Scanner Line -->
+    <g transform="translate(16, 52)">
+      <rect width="64" height="30" rx="4" fill="#05101A" stroke="#00D4FF" stroke-width="0.8"/>
+      <!-- Scanner Laser -->
+      <line class="radar-sweep" x1="2" y1="2" x2="62" y2="2" stroke="#00D4FF" stroke-width="1.8" filter="url(#neonGlow)"/>
+    </g>
+
+    <text x="184" y="72" text-anchor="end" fill="#00D4FF" font-size="9.5" font-weight="600">ACTIVE ⚡</text>
+  </g>
+
+
+  <!-- ==================== STAGE 2: NEURAL CORE (CENTER) ==================== -->
+  <!-- Ambient Core Aura -->
+  <circle cx="440" cy="170" r="95" fill="url(#coreAura)" />
+
+  <!-- Orbiting Synapse Rings -->
+  <g class="orbit-ring-1" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="6 14">
+    <ellipse cx="440" cy="170" rx="85" ry="85" />
+    <circle cx="525" cy="170" r="3.5" fill="#00D4FF" filter="url(#neonGlow)"/>
+  </g>
+  <g class="orbit-ring-2" stroke="#A855F7" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="10 20">
+    <ellipse cx="440" cy="170" rx="72" ry="72" />
+    <circle cx="368" cy="170" r="3" fill="#A855F7" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Core Container Card -->
+  <g transform="translate(350, 75)" filter="url(#cardShadow)">
+    <rect width="180" height="190" rx="14" fill="url(#coreGrad)" stroke="url(#cyanLine)" stroke-width="1.5" />
+
+    <!-- Core Header -->
+    <text x="90" y="28" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700" letter-spacing="0.5">
+      🧠 CLOWDY CORE
+    </text>
+    <text x="90" y="46" text-anchor="middle" fill="#00D4FF" font-size="10.5" font-weight="600">
+      Gemini 3.6 Flash Live
+    </text>
+
+    <!-- Glowing Center Orb -->
+    <g class="pulse-beacon" transform="translate(90, 85)">
+      <circle cx="0" cy="0" r="24" fill="#041220" stroke="#00D4FF" stroke-width="1.5" filter="url(#neonGlow)"/>
+      <circle cx="0" cy="0" r="14" fill="url(#cyanLine)" opacity="0.8" filter="url(#neonGlow)"/>
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+    </g>
+
+    <!-- Dialect & Autonomy Badges -->
+    <rect x="18" y="125" width="144" height="22" rx="6" fill="#091A2A" stroke="#00D4FF" stroke-width="0.7" stroke-opacity="0.4"/>
+    <text x="90" y="140" text-anchor="middle" fill="#E0F7FA" font-size="9.5" font-weight="600">
+      🇪🇬 العامية المصرية (Native)
+    </text>
+
+    <rect x="18" y="153" width="144" height="22" rx="6" fill="#140A26" stroke="#A855F7" stroke-width="0.7" stroke-opacity="0.5"/>
+    <text x="90" y="168" text-anchor="middle" fill="#D8B4FE" font-size="9.5" font-weight="600">
+      🎵 Maqam &amp; Music Engine
+    </text>
+  </g>
+
+
+  <!-- ==================== STAGE 3: OUTPUTS (RIGHT) ==================== -->
+  <!-- Card 3: Voice & Singing Output -->
+  <g transform="translate(650, 60)">
+    <rect width="200" height="90" rx="10" fill="url(#cardGrad)" stroke="#A855F7" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#C084FC" font-size="12" font-weight="700">🔊 LIVE VOICE &amp; SONG</text>
+    <text x="16" y="44" fill="#E9D5FF" font-size="10">Egyptian Cadence + Maqam</text>
+
+    <!-- Audio Output Waves -->
+    <g transform="translate(16, 54)">
+      <rect class="wave-bar wb-3" x="0" y="0" width="4" height="22" rx="2" fill="#A855F7" />
+      <rect class="wave-bar wb-1" x="8" y="0" width="4" height="22" rx="2" fill="#C084FC" />
+      <rect class="wave-bar wb-5" x="16" y="0" width="4" height="22" rx="2" fill="#00D4FF" />
+      <rect class="wave-bar wb-2" x="24" y="0" width="4" height="22" rx="2" fill="#A855F7" />
+      <rect class="wave-bar wb-6" x="32" y="0" width="4" height="22" rx="2" fill="#C084FC" />
+      <rect class="wave-bar wb-4" x="40" y="0" width="4" height="22" rx="2" fill="#A855F7" />
+      <rect class="wave-bar wb-2" x="48" y="0" width="4" height="22" rx="2" fill="#00D4FF" />
+      <rect class="wave-bar wb-5" x="56" y="0" width="4" height="22" rx="2" fill="#C084FC" />
+    </g>
+
+    <text x="184" y="72" text-anchor="end" fill="#C084FC" font-size="9.5" font-weight="600">STREAM 🎵</text>
+  </g>
+
+  <!-- Card 4: Windows Automation Engine -->
+  <g transform="translate(650, 190)">
+    <rect width="200" height="90" rx="10" fill="url(#cardGrad)" stroke="#00FF88" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#00FF88" font-size="12" font-weight="700">💻 WIN AUTOMATION</text>
+    <text x="16" y="44" fill="#8FFCFF" font-size="10">pywin32 • Shell • Controls</text>
+
+    <!-- Mini Exec Indicator -->
+    <g transform="translate(16, 52)">
+      <rect width="100" height="24" rx="4" fill="#03150E" stroke="#00FF88" stroke-width="0.8"/>
+      <text x="6" y="16" fill="#00FF88" font-size="9.5" font-weight="600">❯ win32.exec() ✓</text>
+    </g>
+
+    <text x="184" y="72" text-anchor="end" fill="#00FF88" font-size="9.5" font-weight="600">READY ⚡</text>
+  </g>
+
+
+  <!-- ==================== BOTTOM STATUS BAR ==================== -->
+  <g transform="translate(24, 320)">
+    <text x="0" y="0" fill="#64748B" font-size="10.5">
+      PIPELINE: <tspan fill="#00FF88">ONLINE</tspan> | ARCHITECTURE: <tspan fill="#00D4FF">BIDIRECTIONAL STREAM</tspan> | SECURITY: <tspan fill="#E0F7FA">HARDWARE-BOUND DPAPI</tspan>
+    </text>
+    <text x="832" y="0" text-anchor="end" fill="#64748B" font-size="10.5">
+      CLOWDY v1.0.0-PROD
+    </text>
+  </g>
+</svg>
