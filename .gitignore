@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging / binaries
+build/
+dist/
+*.spec
+*.exe
+
+# Environments
+.env
+.env.*
+.venv
+env/
+venv/
+
+# Local configuration, keys, and private vaults
+config/api_keys.json
+config/license_key.json
+config/account_vault.json
+config/user_profile.json
+config/voice_settings.json
+*.token.json
+*.credentials.json
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch & temporary
+scratch/
+temp/
+tmp/
