@@ -9,7 +9,9 @@
   # ☁️ Clowdy — Next-Gen Desktop AI Companion
 
   <p align="center">
-    <img src="assets/typing-banner.svg" alt="Clowdy AI Capabilities" width="880" style="max-width: 100%;" />
+    <a href="https://readme-typing-svg.demolab.com">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1200&color=00D4FF&center=true&vcenter=true&width=850&lines=Meet+Clowdy%3A+Your+Ultra-Fast+Desktop+AI+Companion;Powered+by+Gemini+3.6+Flash+Live+Audio+Stream;Native+Egyptian+Arabic+(%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9)+%2B+Multilingual;Real-Time+Screen+Vision+%26+Autonomous+PC+Control;Live+Melodic+Singing+with+Authentic+Arabic+Maqamat;Zero-Latency+Deep+Windows+10+%26+11+OS+Automation" alt="Typing SVG" />
+    </a>
   </p>
 
   <p align="center">
@@ -106,13 +108,6 @@
 
 ## 🏗️ System Architecture
 
-<div align="center">
-  <img src="assets/neural-pipeline.svg" alt="Clowdy Neural Multimodal Pipeline" width="880" style="max-width: 100%; border-radius: 14px; margin: 10px 0 20px 0; filter: drop-shadow(0 0 24px rgba(0, 212, 255, 0.22));" />
-</div>
-
-<details>
-<summary><b>📐 View Structural Flowchart & Component Hierarchy (Mermaid)</b></summary>
-
 ```mermaid
 flowchart TD
     subgraph UI ["🖥️ Clowdy Animated Desktop UI"]
@@ -153,8 +148,6 @@ flowchart TD
     UI --> Security
     Core --> Security
 ```
-
-</details>
 
 ---
 
