@@ -10,7 +10,7 @@
 
   <p align="center">
     <a href="https://readme-typing-svg.demolab.com">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1200&color=00D4FF&center=true&vcenter=true&width=650&lines=Meet+Clowdy%3A+Your+Ultra-Fast+Desktop+AI+Companion;Powered+by+Gemini+3.6+Flash+Live+Bidirectional+Audio;Native+Egyptian+Arabic+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9+%2B+Multilingual;Real-Time+Vision%2C+Screen+Awareness+%26+Windows+Control;Zero-Latency+Automation+%26+Live+Musical+Singing" alt="Typing SVG" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=1200&color=00D4FF&center=true&vcenter=true&width=800&lines=Next-Gen+Desktop+AI+Companion;Powered+by+Gemini+3.6+Flash+Live+Bidirectional+Audio;Native+Egyptian+Dialect+%2B+Multilingual+Fluency;Real-Time+Screen+Vision+%26+Autonomous+PC+Control;Live+Musical+Singing+with+Authentic+Melodies;Ultra-Low+Latency+Windows+OS+Automation" alt="Typing SVG" />
     </a>
   </p>
 
@@ -68,6 +68,15 @@
 
 ---
 
+## 🔮 Neural Holographic Core
+
+<div align="center">
+  <p><b>Real-Time Telemetry &amp; Interactive Holographic HUD:</b></p>
+  <img src="assets/holographic-core.svg" alt="Holographic AI Core" width="700" style="max-width: 100%; border-radius: 14px; margin-top: 6px; filter: drop-shadow(0 0 24px rgba(0, 212, 255, 0.35));" />
+</div>
+
+---
+
 ## ⚡ Live Interaction Demo
 
 <div align="center">
@@ -92,6 +101,10 @@
 ### 👁️ 3. Multi-Modal Vision & Screen Intelligence
 - **Active Desktop Awareness**: Inspects windows, reads code, debugs UI, and tracks user actions across monitors without saving images to disk.
 - **Game & Camera Vision**: Analyzes live camera feeds for hand gestures and plays video games autonomously using AI vision feedback.
+
+<div align="center">
+  <img src="assets/vision-scanner.svg" alt="Multimodal Screen Vision Scanner" width="700" style="max-width: 100%; border-radius: 12px; margin: 10px 0; filter: drop-shadow(0 0 16px rgba(0, 255, 136, 0.25));" />
+</div>
 
 ### 💻 4. Deep Windows Automation
 - **Natural Language Terminal Control**: Translate goals into safe CMD / PowerShell executions (`"find the 5 largest files on drive D"`).
