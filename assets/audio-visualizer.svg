@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="42" viewBox="0 0 600 42" fill="none">
+  <defs>
+    <linearGradient id="visGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#003344" />
+      <stop offset="50%" stop-color="#007a99" />
+      <stop offset="100%" stop-color="#00d4ff" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .bar {
+        transform-origin: bottom;
+        animation: eqPulse 1.2s ease-in-out infinite alternate;
+        rx: 2;
+      }
+      @keyframes eqPulse {
+        0% { transform: scaleY(0.15); opacity: 0.4; }
+        50% { transform: scaleY(0.9); opacity: 0.95; }
+        100% { transform: scaleY(0.3); opacity: 0.6; }
+      }
+      .b1  { animation-delay: 0.05s; animation-duration: 0.8s; }
+      .b2  { animation-delay: 0.35s; animation-duration: 1.1s; }
+      .b3  { animation-delay: 0.15s; animation-duration: 0.95s; }
+      .b4  { animation-delay: 0.65s; animation-duration: 1.3s; }
+      .b5  { animation-delay: 0.25s; animation-duration: 0.75s; }
+      .b6  { animation-delay: 0.85s; animation-duration: 1.05s; }
+      .b7  { animation-delay: 0.45s; animation-duration: 1.25s; }
+      .b8  { animation-delay: 0.10s; animation-duration: 0.85s; }
+      .b9  { animation-delay: 0.55s; animation-duration: 1.15s; }
+      .b10 { animation-delay: 0.30s; animation-duration: 0.90s; }
+      .b11 { animation-delay: 0.70s; animation-duration: 1.40s; }
+      .b12 { animation-delay: 0.20s; animation-duration: 0.80s; }
+      .b13 { animation-delay: 0.50s; animation-duration: 1.00s; }
+      .b14 { animation-delay: 0.90s; animation-duration: 1.35s; }
+      .b15 { animation-delay: 0.40s; animation-duration: 0.70s; }
+      .b16 { animation-delay: 0.75s; animation-duration: 1.10s; }
+      .b17 { animation-delay: 0.18s; animation-duration: 0.92s; }
+      .b18 { animation-delay: 0.62s; animation-duration: 1.22s; }
+      .b19 { animation-delay: 0.32s; animation-duration: 0.88s; }
+      .b20 { animation-delay: 0.82s; animation-duration: 1.08s; }
+      .b21 { animation-delay: 0.42s; animation-duration: 1.28s; }
+      .b22 { animation-delay: 0.12s; animation-duration: 0.78s; }
+      .b23 { animation-delay: 0.52s; animation-duration: 1.18s; }
+      .b24 { animation-delay: 0.22s; animation-duration: 0.84s; }
+      .b25 { animation-delay: 0.72s; animation-duration: 1.32s; }
+      .b26 { animation-delay: 0.38s; animation-duration: 0.98s; }
+      .b27 { animation-delay: 0.88s; animation-duration: 1.20s; }
+      .b28 { animation-delay: 0.28s; animation-duration: 0.82s; }
+      .b29 { animation-delay: 0.58s; animation-duration: 1.12s; }
+      .b30 { animation-delay: 0.95s; animation-duration: 1.38s; }
+    </style>
+  </defs>
+
+  <g filter="url(#glow)">
+    <!-- 30 visualizer bars mirrored centered -->
+    <rect class="bar b1"  x="60"  y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b2"  x="76"  y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b3"  x="92"  y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b4"  x="108" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b5"  x="124" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b6"  x="140" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b7"  x="156" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b8"  x="172" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b9"  x="188" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b10" x="204" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b11" x="220" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b12" x="236" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b13" x="252" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b14" x="268" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b15" x="284" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b16" x="300" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b17" x="316" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b18" x="332" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b19" x="348" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b20" x="364" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b21" x="380" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b22" x="396" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b23" x="412" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b24" x="428" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b25" x="444" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b26" x="460" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b27" x="476" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b28" x="492" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b29" x="508" y="4" width="6" height="34" fill="url(#visGrad)" />
+    <rect class="bar b30" x="524" y="4" width="6" height="34" fill="url(#visGrad)" />
+  </g>
+</svg>

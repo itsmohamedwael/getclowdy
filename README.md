@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:001520,35:003344,70:007a99,100:00d4ff&height=120&section=header" width="100%" alt="Clowdy Header Wave" />
+</p>
+
 <div align="center">
 
   <img src="assets/logo.png" alt="Clowdy AI Logo" width="160" style="border-radius: 24px; filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.45)); margin-bottom: 12px;"/>
@@ -8,6 +12,10 @@
     <a href="https://readme-typing-svg.demolab.com">
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=1200&color=00D4FF&center=true&vcenter=true&width=650&lines=Meet+Clowdy%3A+Your+Ultra-Fast+Desktop+AI+Companion;Powered+by+Gemini+3.6+Flash+Live+Bidirectional+Audio;Native+Egyptian+Arabic+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9+%2B+Multilingual;Real-Time+Vision%2C+Screen+Awareness+%26+Windows+Control;Zero-Latency+Automation+%26+Live+Musical+Singing" alt="Typing SVG" />
     </a>
+  </p>
+
+  <p align="center">
+    <img src="assets/audio-visualizer.svg" alt="Live Audio Frequency Spectrum" width="540" />
   </p>
 
   <p align="center">
@@ -31,6 +39,7 @@
   </p>
 
   <p align="center">
+    <a href="#-live-interaction-demo">Live Demo</a> •
     <a href="#-key-capabilities">Key Capabilities</a> •
     <a href="#-system-architecture">Architecture</a> •
     <a href="#-quick-start">Quick Start</a> •
@@ -56,6 +65,15 @@
 | **OS Integration** | Windows 10 / 11 Native (`pywin32`, Registry, DPAPI) | 🟢 Complete |
 | **Singing Capability** | Melodic Pitch Synthesis with Arabic Maqamat & Western Melody | 🟢 Musical |
 | **License & Identity** | Hardware-bound validation with Auto-Onboard Admin bypass | 🟢 Zero-Leak |
+
+---
+
+## ⚡ Live Interaction Demo
+
+<div align="center">
+  <p><b>Watch Clowdy process live Egyptian dialect, automate Windows, and stream music in real time:</b></p>
+  <img src="assets/animated-terminal.svg" alt="Animated Clowdy Terminal HUD" width="720" style="max-width: 100%; border-radius: 14px; margin-top: 8px; filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.25));" />
+</div>
 
 ---
 
@@ -314,6 +332,17 @@ Contributions make the open-source community an amazing place to learn, inspire,
 </div>
 
 ---
+
+<div align="center">
+  <h3>🛠️ Core Engineering Stack</h3>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,windows,powershell,github,vscode,git" alt="Core Technologies" />
+  </a>
+</div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,30:007a99,65:003344,100:001520&height=100&section=footer" width="100%" alt="Footer Wave"/>
+</p>
 
 <div align="center">
 
